@@ -18,13 +18,13 @@ A small trick is to use tab auto complete in terminal. Type something incomplete
 
 Usually after filling out topic name press tab key twice. It will auto fill message type and message. Then edit the message to your requirements. 
 
-![rostopic_pub_single](/home/wally1002/Downloads/Robotics/tutorials/media/rostopic_pub_single.gif)
+![rostopic_pub_single](https://github.com/wally1002/tutorials/blob/main/media/rostopic_pub_single.gif?raw=true)
 
 Edit the linear velocities in x, y directions and observe. As you can see the turtle stopped after sometime, it's because we only sent a single message. Some times we need to send messages continuously. This is where `-r` flag helps us. It means repeatedly. The command structure will be
 
 `rostopic pub -r <frequency of messages> <topic name> <message type> <message>`
 
-![rostopic_pub_rec](/home/wally1002/Downloads/Robotics/tutorials/media/rostopic_pub_rec.gif) 
+![rostopic_pub_rec](https://github.com/wally1002/tutorials/blob/main/media/rostopic_pub_rec.gif?raw=true) 
 
 In the GIF we are sending 1 message per second. We can increase the frequency if needed. This concludes discussion on rostopics. Now let's move turtle to a given location. 
 
@@ -267,7 +267,7 @@ if __name__ == '__main__':
 
 This above piece of code is where we call everything we written. So `if __name__ == '__main__':` executes our program. If you want to know more on this watch this [video](https://www.youtube.com/watch?v=sugvnHA7ElY). We instantiate our `TurtleBot` class then call the `move2goal` function. 
 
-![move2goal](/home/wally1002/Downloads/Robotics/tutorials/media/move2goal.gif)
+![move2goal](https://github.com/wally1002/tutorials/blob/main/media/move2goal.gif?raw=true)
 
 So that is it. This is how we can control a robot in simulator using code. I tried to split everything into modules and asses them individually. So if you have any doubts you can ping me anytime!.
 
