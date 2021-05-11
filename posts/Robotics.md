@@ -10,7 +10,7 @@ So I think that should be quite a good intro. I will now move from philosophical
 
 ROS is a pseudo-operating system created to handle complex robots with many functions. ROS provides us with an interface to design modular systems with different functions. ROS is essentially a communication framework. Why ROS? This was the question I asked myself when I couldn't find my way around ROS. Why? cause ROS lets us communicate between different nodes or codes written in different language for different devices. ROS unifies this process of communication. So let's start with installing ROS. 
 
-![logo_ros](/home/wally1002/Downloads/Robotics/logo_ros.jpg)
+![logo_ros](https://github.com/wally1002/tutorials/blob/main/media/logo_ros.jpg?raw=true)
 
 ### Installing ROS
 
@@ -44,7 +44,7 @@ So as the installation is out of the way let's get into core of the ROS.
 
 ROS is about sending and receiving data. So it is maintained by three main structures, Nodes, Topics and Messages. The below figure illustrates how these are connected. 
 
-![image-20210509212618969](/home/wally1002/.config/Typora/typora-user-images/image-20210509212618969.png)
+![image-20210509212618969](https://github.com/wally1002/tutorials/blob/main/media/core_ros.png?raw=true)
 
 1. ROS NODES : Nodes are simply some code which needs data from other sources or generates data which needs to be sent to other nodes. For example camera is source of images, the raw data from sensor is processed on the camera itself and the image is formed. We now need to send the image to the processor so it can save and modify it. Here camera acts as a Node which sends(publishes) the data(image). 
 
@@ -78,7 +78,7 @@ Then we need to source(setup) our workspace and this needs to be done every time
 
 `echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc`
 
-![output](/home/wally1002/Downloads/Robotics/ws.gif)
+![output](https://github.com/wally1002/tutorials/blob/main/media/ws.gif?raw=true)
 
 
 
@@ -95,7 +95,7 @@ So we have our package ready to go. We can create a scripts folder inside your p
 `cd ~/catkin_ws/src`
 `mkdir tutorials/scripts`
 
-![package](/home/wally1002/Downloads/Robotics/package.gif)
+![package](https://github.com/wally1002/tutorials/blob/main/media/package.gif?raw=true)
 
 I think this will be it for this post and let's look into a simulator called Turtlesim in the next post. 
 
