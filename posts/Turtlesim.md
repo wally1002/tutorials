@@ -54,4 +54,4 @@ Now we may want to inspect the data itself which is being published into the top
 
 You may have observed a pattern here. To get anything related to a rostopic we are just using list, info, echo after it. This also applies for nodes, messages and others also. 
 
-In the next post we will look into `rostopic pub`, `/turtle1/pose` topic and write a script to move the turtle to a given position from a python code. 
+In the next post we will look into `rostopic pub`, `/turtle1/pose` topic and write a script to move the turtle to a given position from a python code..............s
