@@ -59,7 +59,7 @@ class TurtleBot:
         self.rate = rospy.Rate(10)
 
     def update_pose(self, data):
-        """Callback function which is called when a new message of type Pose is received by the 				 	   subscriber."""
+        """Callback function which is called when a new message of type Pose is received by the subscriber."""
         self.pose = data
         self.pose.x = round(self.pose.x, 4)
         self.pose.y = round(self.pose.y, 4)
@@ -140,13 +140,13 @@ rospy is python package for writing code we can connect to ros. geometry_msgs ar
 class TurtleBot:
 
     def __init__(self):
-        # Creates a node with name 'turtlebot_controller' and make sure it is a unique node (using 						anonymous=True).
+        # Creates a node with name 'turtlebot_controller' and make sure it is a unique node (using anonymous=True).
         rospy.init_node('turtlebot_controller', anonymous=True)
 
         # Publisher which will publish to the topic '/turtle1/cmd_vel' of type Twist with a queue of 10 msgs.
         self.velocity_publisher = rospy.Publisher('/turtle1/cmd_vel', Twist, queue_size=10)
 
-        # A subscriber to the topic '/turtle1/pose' with msg type Pose. self.update_pose is called when a 			    message of type Pose is received.
+        # A subscriber to the topic '/turtle1/pose' with msg type Pose. self.update_pose is called when a message of type Pose is received.
         self.pose_subscriber = rospy.Subscriber('/turtle1/pose',
                                                 Pose, self.update_pose)
         # set the pose variable
@@ -159,7 +159,7 @@ Define a class for a turtle with all the functions needed. In the constructor(`_
 
 ```python
 def update_pose(self, data):
-    """Callback function which is called when a new message of type Pose is received by the 				 	   subscriber."""
+    """Callback function which is called when a new message of type Pose is received by the subscriber."""
     # store the pose msg in pose variable
     self.pose = data
     # round of x, y to 4 decimal places
